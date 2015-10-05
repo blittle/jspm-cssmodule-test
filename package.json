@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "jspm bundle-sfx app app.build.js",
-    "setup": "npm install && jspm install"
+    "setup": "npm install && jspm install",
+		"serve": "static --port=1337"
   },
   "jspm": {
     "dependencies": {
@@ -16,7 +17,8 @@
       "core-js": "npm:core-js@^1.1.4"
     }
   },
-  "dependencies": {
-    "jspm": "0.16.11"
+  "devDependencies": {
+    "jspm": "0.16.11",
+    "node-static": "0.7.7"
   }
 }
