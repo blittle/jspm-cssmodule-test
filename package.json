@@ -1,8 +1,10 @@
 {
   "scripts": {
     "build": "jspm bundle-sfx app app.build.js",
+    "build-system": "jspm bundle app --inject",
     "setup": "npm install && jspm install",
-		"serve": "static --port=1337"
+    "serve": "static --port=1337",
+		"all": "npm run setup && npm run build && npm run serve"
   },
   "jspm": {
     "dependencies": {
